@@ -5,7 +5,6 @@
   <title>Eficaz Proteção &mdash; Proteção para o seu caminhão</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
   <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
   <link rel="stylesheet" href="fonts/icomoon/style.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -18,13 +17,63 @@
   <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
-
+  <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    
+    .callout {
+      position: fixed;
+      bottom: 35px;
+      right: 20px;
+      margin-left: 20px;
+      max-width: 300px;
+      z-index: 999;
+    }
+    
+    .callout-header {
+      padding: 25px 15px;
+      background: #001a72;
+      font-size: 30px;
+      color: white;
+    }
+    
+    .callout-container {
+      padding: 15px;
+      background-color: #ccc;
+      color: black
+    }
+    
+    .closebtn {
+      position: absolute;
+      top: 5px;
+      right: 15px;
+      color: white;
+      font-size: 30px;
+      cursor: pointer;
+    }
+    
+    .closebtn:hover {
+      color: lightgrey;
+    }
+    </style>
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <div class="callout">
+    <div class="callout-header">Ligamos para você</div>
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    <div class="callout-container">
+      <form method="POST" action="./php/ligue.php" >
+            <label class="text-black" for="nome">Nome:</label>
+            <input type="text" name="nome" class="form-control" placeholder="Seu nome">
+            <label class="text-black" for="telefone">Telefone:</label>
+            <input type="text" name="telefone" class="form-control" placeholder="DDD + Telefone">
+            <p></p>
+            <input type="submit" value="Enviar" class="btn btn-primary btn-md text-white">
+      </form>
+    </div>
+  </div>
 
   <div class="site-wrap">
-
     <div class="site-mobile-menu site-navbar-target">
       <div class="site-mobile-menu-header">
         <div class="site-mobile-menu-close mt-3">
@@ -75,6 +124,7 @@
                 <li><a href="#about-section">Eficaz</a></li>
                 <li><a href="#work-section" class="nav-link">Cotação</a></li>
                 <li><a href="#services-section" class="nav-link">Serviços</a></li>
+                <li><a href="#indicacao-section">Indicação</a></li>
                 <li><a href="#team-section">Equipe</a></li>
                 <li><a href="http://blog.eficazprotecao.com.br" class="nav-link">Blog</a></li>
                 <li><a href="#contact-section" class="nav-link">Contato</a></li>
@@ -118,7 +168,7 @@
 
 
 
-<!--Beneficios-->
+    <!--Beneficios-->
     <section class="site-section">
       <div class="container">
         <div class="row justify-content-center mb-5">
@@ -164,7 +214,7 @@
         </div>
       </div>
     </section>
-<!--Sobre-->
+    <!--Sobre-->
     <div class="site-section" id="about-section">
       <div class="container">
         <div class="row mb-5">
@@ -211,7 +261,7 @@
         </div>
       </div>
     </div>
-<!--Cotacao-->
+    <!--Cotacao-->
     <div class="site-section" id="work-section">
       <div class="row justify-content-center">
         <div class="col-md-8 text-center">
@@ -289,345 +339,417 @@
         </div>
       </section>
     </div>
-<!--Depoimento-->
-  <section class="site-section testimonial-wrap">
-    <div class="container">
+    <!--Depoimento-->
+    <section class="site-section testimonial-wrap">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2 class="text-black h1 site-section-heading text-center">Depoimentos</h2>
+          </div>
+        </div>
+      </div>
+      <div class="slide-one-item home-slider owl-carousel">
+        <div>
+          <div class="testimonial">
+
+            <blockquote class="mb-5">
+              <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam
+                quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet
+                dolores excepturi earum unde iusto.&rdquo;</p>
+            </blockquote>
+
+            <figure class="mb-4 d-flex align-items-center justify-content-center">
+              <div><img src="images/person_3.jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
+              <p>John Smith</p>
+            </figure>
+          </div>
+        </div>
+        <div>
+          <div class="testimonial">
+
+            <blockquote class="mb-5">
+              <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam
+                quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet
+                dolores excepturi earum unde iusto.&rdquo;</p>
+            </blockquote>
+            <figure class="mb-4 d-flex align-items-center justify-content-center">
+              <div><img src="images/person_2.jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
+              <p>Christine Aguilar</p>
+            </figure>
+
+          </div>
+        </div>
+
+        <div>
+          <div class="testimonial">
+
+            <blockquote class="mb-5">
+              <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam
+                quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet
+                dolores excepturi earum unde iusto.&rdquo;</p>
+            </blockquote>
+            <figure class="mb-4 d-flex align-items-center justify-content-center">
+              <div><img src="images/person_4.jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
+              <p>Robert Spears</p>
+            </figure>
+
+
+          </div>
+        </div>
+
+        <div>
+          <div class="testimonial">
+
+            <blockquote class="mb-5">
+              <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam
+                quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet
+                dolores excepturi earum unde iusto.&rdquo;</p>
+            </blockquote>
+            <figure class="mb-4 d-flex align-items-center justify-content-center">
+              <div><img src="images/person_5.jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
+              <p>Bruce Rogers</p>
+            </figure>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!--Serviços-->
+    <section class="site-section border-bottom" id="services-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-8 text-center" data-aos="fade-up">
+            <h2 class="text-black h1 site-section-heading text-center">Nossos Serviços</h2>
+          </div>
+        </div>
+        <div class="row align-items-stretch">
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class="text-primary icon-check-circle-o"></span></div>
+              <div>
+                <h3>Avaliação</h3>
+                <p>A Tabela Fipe é utilizada como referente para definir o preço médio dos veículos vendidos no Brasil.
+                  Por esse motivo ela é tão importante, já que quando a Proteauto necessita indenizar um associado, o
+                  valor adotado é o de mercado (definido pela Fipe) e não o que o motorista acha que vale o seu veiculo
+                  ou
+                  preço de nota fiscal (porque o veiculo sofre depreciação logo que sai da loja).</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class="text-primary icon-compass"></span></div>
+              <div>
+                <h3>Rastreador</h3>
+                <p>Visando trazer mais segurança e benefícios para seus associados trás hoje em parceria com a TRACKER
+                  um
+                  rastreamento de qualidade que funciona 24h por dia, evitando que o motorista fique desprotegido mesmo
+                  que por pouco tempo. É de conhecimento geral que muitas ocorrências acontecem de noite e de madrugada,
+                  e
+                  todos devem estar preparados para a ação. Para os veículos que fazem transporte, é uma segurança
+                  adicional ao valor da carga transportada, Além disso, é possível monitorar o posicionamento com o
+                  rastreador.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class="text-primary icon-wrench"></span></div>
+              <div>
+                <h3>Cobertura Completa</h3>
+                <p>A Proteção Veicular da Proteauto cobre seus Associados em caso de roubo ou furto, colisões, incêndio,
+                  alagamento, indenização a terceiros e muito mais. Você pode cadastrar qualquer condutor habilitado,
+                  sem
+                  custo adicional. Nós sabemos que, quando você precisa de ajuda, a última coisa que quer é ter que
+                  lidar
+                  com burocracias e uma série de dificuldades. Tudo que você quer é sentir-se protegido. E nós estamos
+                  aqui para isso: Fornecer ampla cobertura e máxima proteção!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class="text-primary icon-circle-o-notch"></span></div>
+              <div>
+                <h3>Destombamento</h3>
+                <p>Os capotamentos são a maior causa individual na morte de condutores de caminhões e é uma das
+                  principais
+                  causas de danos a carga e dos veículos. Os caminhões tombam facilmente porque são altos e
+                  estreitos. Os
+                  capotamentos geralmente acontecem em caminhos rurais, estradas, curvas e em rampas de saída ou
+                  entradas
+                  de estradas. Pensando nisso, a Proteauto criou também a cobertura de destombamento para seus
+                  associados.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class="text-primary icon-lock"></span></div>
+              <div>
+                <h3>Roubo e Furto</h3>
+                <p>Hoje em dia, com o aumento da criminalidade, roubo de cargas e do enorme mercado negro de peças que é
+                  alimentado com os veículos furtados e roubados todos os dias, tanto nas grandes capitais quando nas
+                  pequenas cidades, fica praticamente impossível não contar com algum tipo de Proteção. Não confie
+                  apenas
+                  na sorte. Proteja-se e fique tranquilo. Nós não podemos impedir que você seja roubado/furtado, mas
+                  podemos minimizar o impacto desta situação tão desagradável ajudando-lhe a recuperar seu patrimônio.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class="text-primary icon-phone"></span></div>
+              <div>
+                <h3>Assistência 24h</h3>
+                <p>Se você já tem seu caminhão há algum tempo, já sabe que alguns riscos são inerentes quando se dirige
+                  constantemente, um problema mecânico, uma pane seca, um pneu furado. São coisas corriqueiras, do dia a
+                  dia, isso pode acontecer a qualquer hora e em qualquer lugar. Para te amparar nos momentos de
+                  dificuldade com seu caminhão, se você for um associado, terá um guincho a sua disposição, 24 horas por
+                  dia, onde você estiver, sem transtornos e sem maiores preocupações.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!--Indicacao-->
+    <div class="site-section" id="indicacao-section" style="background-color: lightgray;">
       <div class="row justify-content-center">
         <div class="col-md-8 text-center">
-          <h2 class="text-black h1 site-section-heading text-center">Depoimentos</h2>
+          <h2 class="text-black h1 site-section-heading text-center">Indicação Premiada</h2>
+          <h3 class="text-black text-center">Ganhe R$200,00 para cada amigo indicado que fechar um plano de proteção
+            conosco.</h3>
+        </div>
+      </div>
+      <section class="section ft-feature-1">
+        <div class="container">
+          <div class="row align-items-stretch">
+            <div class="col-12 bg-light w-100 ft-feature-1-content">
+              <div class="row align-items-center">
+                <div class="col-lg-7 ml-auto">
+                  <form method="POST" action="./php/indicacao.php" class="p-5 bg-#91A7AA">
+                    <h2 class="text-black h1 site-section-heading text-center">Indicador</h2>
+                    <div class="row form-group">
+                      <div class="col-md-6 mb-3 mb-md-0">
+                        <label class="text-black" for="nome">Nome Completo:</label>
+                        <input type="text" id="nomeindicador" class="form-control" placeholder="Seu nome">
+                      </div>
+                      <div class="col-md-6">
+                        <label class="text-black" for="telefone">Telefone:</label>
+                        <input type="text" id="telefoneindicador" class="form-control" placeholder="DDD + Telefone">
+                      </div>
+                    </div>
+                    <h2 class="text-black h1 site-section-heading text-center">Indicado</h2>
+                    <div class="row form-group">
+                      <div class="col-md-6 mb-3 mb-md-0">
+                        <label class="text-black" for="nome">Nome Completo:</label>
+                        <input type="text" id="nomeindicado" class="form-control" placeholder="Nome do indicado">
+                      </div>
+                      <div class="col-md-6">
+                        <label class="text-black" for="telefone">Telefone:</label>
+                        <input type="text" id="telefoneindicado" class="form-control" placeholder="DDD + Telefone">
+                      </div>
+                    </div>
+                    <div class="row form-group">
+                      <div class="col-md-12">
+                        <input type="submit" value="Enviar" class="btn btn-primary btn-md text-white">
+                      </div>
+                    </div>
+                    <div class="row form-group">
+                      <div class="col-md-12">
+                      <a href="regulamento.html" class="regulamento" style="color: #D1462F; padding-left: 80%;">*Regulamento</a>
+                    </div>
+                  </div>
+                  </form>
+
+                </div>
+                <div class="col-lg-5">
+
+                  <img src="images/about_1.jpg" alt="Image" class="img-fluid mb-4 mb-lg-0">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!--Depoimento-->
+    <div class="site-section border-bottom" id="team-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-7 text-center">
+            <h2 class="text-black h1 site-section-heading">Nosso Time</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-3 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+            <div class="person text-center">
+              <img src="images/person_2.jpg" alt="Image" class="img-fluid rounded-circle w-50 mb-5">
+              <h3>Ney </h3>
+              <p class="position text-muted">Co-Founder, President</p>
+              <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde
+                molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate
+                tempore suscipit inventore deserunt tenetur.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
+            <div class="person text-center">
+              <img src="images/person_3.jpg" alt="Image" class="img-fluid rounded-circle w-50 mb-5">
+              <h3>Gabriel</h3>
+              <p class="position text-muted">Co-Founder, COO</p>
+              <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde
+                molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate
+                tempore suscipit inventore deserunt tenetur.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="300">
+            <div class="person text-center">
+              <img src="images/person_4.jpg" alt="Image" class="img-fluid rounded-circle w-50 mb-5">
+              <h3>Carol</h3>
+              <p class="position text-muted">Marketing</p>
+              <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde
+                molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate
+                tempore suscipit inventore deserunt tenetur.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="400">
+            <div class="person text-center">
+              <img src="images/person_4.jpg" alt="Image" class="img-fluid rounded-circle w-50 mb-5">
+              <h3>Rebeca</h3>
+              <p class="position text-muted">Marketing</p>
+              <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde
+                molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate
+                tempore suscipit inventore deserunt tenetur.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="slide-one-item home-slider owl-carousel">
-      <div>
-        <div class="testimonial">
-
-          <blockquote class="mb-5">
-            <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam
-              quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet
-              dolores excepturi earum unde iusto.&rdquo;</p>
-          </blockquote>
-
-          <figure class="mb-4 d-flex align-items-center justify-content-center">
-            <div><img src="images/person_3.jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
-            <p>John Smith</p>
-          </figure>
-        </div>
-      </div>
-      <div>
-        <div class="testimonial">
-
-          <blockquote class="mb-5">
-            <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam
-              quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet
-              dolores excepturi earum unde iusto.&rdquo;</p>
-          </blockquote>
-          <figure class="mb-4 d-flex align-items-center justify-content-center">
-            <div><img src="images/person_2.jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
-            <p>Christine Aguilar</p>
-          </figure>
-
-        </div>
-      </div>
-
-      <div>
-        <div class="testimonial">
-
-          <blockquote class="mb-5">
-            <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam
-              quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet
-              dolores excepturi earum unde iusto.&rdquo;</p>
-          </blockquote>
-          <figure class="mb-4 d-flex align-items-center justify-content-center">
-            <div><img src="images/person_4.jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
-            <p>Robert Spears</p>
-          </figure>
-
-
-        </div>
-      </div>
-
-      <div>
-        <div class="testimonial">
-
-          <blockquote class="mb-5">
-            <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam
-              quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet
-              dolores excepturi earum unde iusto.&rdquo;</p>
-          </blockquote>
-          <figure class="mb-4 d-flex align-items-center justify-content-center">
-            <div><img src="images/person_5.jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
-            <p>Bruce Rogers</p>
-          </figure>
-
-        </div>
-      </div>
-
-    </div>
-  </section>
-<!--Serviços-->
-  <section class="site-section border-bottom" id="services-section">
-    <div class="container">
-      <div class="row justify-content-center mb-5">
-        <div class="col-md-8 text-center" data-aos="fade-up">
-          <h2 class="text-black h1 site-section-heading text-center">Nossos Serviços</h2>
-        </div>
-      </div>
-      <div class="row align-items-stretch">
-        <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
-          <div class="unit-4 d-flex">
-            <div class="unit-4-icon mr-4"><span class="text-primary icon-check-circle-o"></span></div>
-            <div>
-              <h3>Avaliação</h3>
-              <p>A Tabela Fipe é utilizada como referente para definir o preço médio dos veículos vendidos no Brasil.
-                Por esse motivo ela é tão importante, já que quando a Proteauto necessita indenizar um associado, o
-                valor adotado é o de mercado (definido pela Fipe) e não o que o motorista acha que vale o seu veiculo ou
-                preço de nota fiscal (porque o veiculo sofre depreciação logo que sai da loja).</p>
-            </div>
+    <!--Contado-->
+    <section class="site-section bg-light" id="contact-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <h2 class="text-black h1 site-section-heading">Contato</h2>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="unit-4 d-flex">
-            <div class="unit-4-icon mr-4"><span class="text-primary icon-compass"></span></div>
-            <div>
-              <h3>Rastreador</h3>
-              <p>Visando trazer mais segurança e benefícios para seus associados trás hoje em parceria com a TRACKER um
-                rastreamento de qualidade que funciona 24h por dia, evitando que o motorista fique desprotegido mesmo
-                que por pouco tempo. É de conhecimento geral que muitas ocorrências acontecem de noite e de madrugada, e
-                todos devem estar preparados para a ação. Para os veículos que fazem transporte, é uma segurança
-                adicional ao valor da carga transportada, Além disso, é possível monitorar o posicionamento com o
-                rastreador.</p>
+        <div class="row">
+          <div class="col-md-7 mb-5">
+            <form method="POST" action="./php/contato.php" class="p-5 bg-white">
+
+              <h2 class="h4 text-black mb-5">Formulário de Contato</h2>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <label class="text-black" for="nome">Nome</label>
+                  <input type="text" name="nome" class="form-control">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <label class="text-black" for="email">Email</label>
+                  <input type="email" name="email" class="form-control">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <label class="text-black" for="mensagem">Mensagem</label>
+                  <textarea name="mensagem" cols="30" rows="7" class="form-control"
+                    placeholder="Escreva sua dúvida ou sugestão aqui..."></textarea>
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <input type="submit" value="Enviar" class="btn btn-primary btn-md text-white">
+                </div>
+              </div>
+
+
+            </form>
+          </div>
+          <div class="col-md-5">
+
+            <div class="p-4 mb-3 bg-white">
+              <p class="mb-0 font-weight-bold">Endereço</p>
+              <p class="mb-4">Avenida Mandacarú, 3163. Pq das Laranjeiras - Maringá PR</p>
+
+              <p class="mb-0 font-weight-bold">Telefone</p>
+              <p class="mb-4"><a href="#">(44) 3030-0380</a></p>
+
+              <p class="mb-0 font-weight-bold">Whatsapp</p>
+              <p class="mb-4"><a href="#">(44) 99803-0738</a></p>
+
+              <p class="mb-0 font-weight-bold">Email </p>
+              <p class="mb-0"><a href="#">contato@eficazprotecao.com.br</a></p>
+
             </div>
+
           </div>
         </div>
-        <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="unit-4 d-flex">
-            <div class="unit-4-icon mr-4"><span class="text-primary icon-wrench"></span></div>
-            <div>
-              <h3>Cobertura Completa</h3>
-              <p>A Proteção Veicular da Proteauto cobre seus Associados em caso de roubo ou furto, colisões, incêndio,
-                alagamento, indenização a terceiros e muito mais. Você pode cadastrar qualquer condutor habilitado, sem
-                custo adicional. Nós sabemos que, quando você precisa de ajuda, a última coisa que quer é ter que lidar
-                com burocracias e uma série de dificuldades. Tudo que você quer é sentir-se protegido. E nós estamos
-                aqui para isso: Fornecer ampla cobertura e máxima proteção!</p>
-            </div>
+      </div>
+    </section>
+
+    <a href="#" class="bg-primary py-5 d-block">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md10">
+            <h2 class="text-white">Vamos se proteger?!</h2>
           </div>
         </div>
-        <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="unit-4 d-flex">
-            <div class="unit-4-icon mr-4"><span class="text-primary icon-circle-o-notch"></span></div>
-            <div>
-              <h3>Destombamento</h3>
-              <p>Os capotamentos são a maior causa individual na morte de condutores de caminhões e é uma das principais
-                causas de danos a carga e dos veículos. Os caminhões tombam facilmente porque são altos e estreitos. Os
-                capotamentos geralmente acontecem em caminhos rurais, estradas, curvas e em rampas de saída ou entradas
-                de estradas. Pensando nisso, a Proteauto criou também a cobertura de destombamento para seus associados.
+      </div>
+    </a>
+    <!--Footer-->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10">
+            <div class="row">
+              <div class="col-md-5">
+                <h2 class="footer-heading mb-4">Sobre nós</h2>
+                <p>Somos uma empresa que prestamos serviços de proteção aos nossos associados, estamos no mercado
+                  desde 2008 providenciando apoio aos nossos clientes no momento em que é mais preciso. .</p>
+              </div>
+              <div class="col-md-3 ml-auto">
+                <h2 class="footer-heading mb-4">Links</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#">Sobre nós</a></li>
+                  <li><a href="#">Serviços</a></li>
+                  <li><a href="#">Testemunhos</a></li>
+                  <li><a href="#">Cotação</a></li>
+                  <li><a href="#">Contato</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h2 class="footer-heading mb-4">Redes Sociais</h2>
+                <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
+                <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <div class="border-top pt-5">
+              <p>
+                Copyright &copy;
+                <script>document.write(new Date().getFullYear());</script> Todos direitos reservados
               </p>
             </div>
           </div>
-        </div>
-        <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="400">
-          <div class="unit-4 d-flex">
-            <div class="unit-4-icon mr-4"><span class="text-primary icon-lock"></span></div>
-            <div>
-              <h3>Roubo e Furto</h3>
-              <p>Hoje em dia, com o aumento da criminalidade, roubo de cargas e do enorme mercado negro de peças que é
-                alimentado com os veículos furtados e roubados todos os dias, tanto nas grandes capitais quando nas
-                pequenas cidades, fica praticamente impossível não contar com algum tipo de Proteção. Não confie apenas
-                na sorte. Proteja-se e fique tranquilo. Nós não podemos impedir que você seja roubado/furtado, mas
-                podemos minimizar o impacto desta situação tão desagradável ajudando-lhe a recuperar seu patrimônio.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
-          <div class="unit-4 d-flex">
-            <div class="unit-4-icon mr-4"><span class="text-primary icon-phone"></span></div>
-            <div>
-              <h3>Assistência 24h</h3>
-              <p>Se você já tem seu caminhão há algum tempo, já sabe que alguns riscos são inerentes quando se dirige
-                constantemente, um problema mecânico, uma pane seca, um pneu furado. São coisas corriqueiras, do dia a
-                dia, isso pode acontecer a qualquer hora e em qualquer lugar. Para te amparar nos momentos de
-                dificuldade com seu caminhão, se você for um associado, terá um guincho a sua disposição, 24 horas por
-                dia, onde você estiver, sem transtornos e sem maiores preocupações.</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-<!--Depoimento-->
-  <div class="site-section border-bottom" id="team-section">
-    <div class="container">
-      <div class="row justify-content-center mb-5">
-        <div class="col-md-7 text-center">
-          <h2 class="text-black h1 site-section-heading">Nosso Time</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
-          <div class="person text-center">
-            <img src="images/person_2.jpg" alt="Image" class="img-fluid rounded-circle w-50 mb-5">
-            <h3>Claudinei </h3>
-            <p class="position text-muted">Co-Founder, President</p>
-            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde
-              molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate
-              tempore suscipit inventore deserunt tenetur.</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
-          <div class="person text-center">
-            <img src="images/person_3.jpg" alt="Image" class="img-fluid rounded-circle w-50 mb-5">
-            <h3>Gabriel</h3>
-            <p class="position text-muted">Co-Founder, COO</p>
-            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde
-              molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate
-              tempore suscipit inventore deserunt tenetur.</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="300">
-          <div class="person text-center">
-            <img src="images/person_4.jpg" alt="Image" class="img-fluid rounded-circle w-50 mb-5">
-            <h3>Carol</h3>
-            <p class="position text-muted">Marketing</p>
-            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde
-              molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate
-              tempore suscipit inventore deserunt tenetur.</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="400">
-          <div class="person text-center">
-            <img src="images/person_4.jpg" alt="Image" class="img-fluid rounded-circle w-50 mb-5">
-            <h3>Rebeca</h3>
-            <p class="position text-muted">Marketing</p>
-            <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde
-              molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate
-              tempore suscipit inventore deserunt tenetur.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-<!--Contado-->
-  <section class="site-section bg-light" id="contact-section">
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col-12 text-center">
-          <h2 class="text-black h1 site-section-heading">Contato</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-7 mb-5">
-          <form method="POST" action="./php/contato.php" class="p-5 bg-white">
-
-            <h2 class="h4 text-black mb-5">Formulário de Contato</h2>
-
-            <div class="row form-group">
-              <div class="col-md-12">
-                <label class="text-black" for="nome">Nome</label>
-                <input type="text" name="nome" class="form-control">
-              </div>
-            </div>
-
-            <div class="row form-group">
-              <div class="col-md-12">
-                <label class="text-black" for="email">Email</label>
-                <input type="email" name="email" class="form-control">
-              </div>
-            </div>
-            
-            <div class="row form-group">
-              <div class="col-md-12">
-                <label class="text-black" for="mensagem">Mensagem</label>
-                <textarea name="mensagem" cols="30" rows="7" class="form-control"
-                  placeholder="Escreva sua dúvida ou sugestão aqui..."></textarea>
-              </div>
-            </div>
-
-            <div class="row form-group">
-              <div class="col-md-12">
-                <input type="submit" value="Enviar" class="btn btn-primary btn-md text-white">
-              </div>
-            </div>
-
-
-          </form>
-        </div>
-        <div class="col-md-5">
-
-          <div class="p-4 mb-3 bg-white">
-            <p class="mb-0 font-weight-bold">Endereço</p>
-            <p class="mb-4">Avenida Mandacarú, 3163. Pq das Laranjeiras - Maringá PR</p>
-
-            <p class="mb-0 font-weight-bold">Telefone</p>
-            <p class="mb-4"><a href="#">(44) 3030-0380</a></p>
-
-            <p class="mb-0 font-weight-bold">Whatsapp</p>
-            <p class="mb-4"><a href="#">(44) 99803-0738</a></p>
-
-            <p class="mb-0 font-weight-bold">Email </p>
-            <p class="mb-0"><a href="#">contato@eficazprotecao.com.br</a></p>
-
-          </div>
 
         </div>
       </div>
-    </div>
-  </section>
-
-  <a href="#" class="bg-primary py-5 d-block">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md10">
-          <h2 class="text-white">Vamos se proteger?!</h2>
-        </div>
-      </div>
-    </div>
-  </a>
-<!--Footer-->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10">
-          <div class="row">
-            <div class="col-md-5">
-              <h2 class="footer-heading mb-4">Sobre nós</h2>
-              <p>Somos uma empresa que prestamos serviços de proteção aos nossos associados, estamos no mercado
-                desde 2008 providenciando apoio aos nossos clientes no momento em que é mais preciso. .</p>
-            </div>
-            <div class="col-md-3 ml-auto">
-              <h2 class="footer-heading mb-4">Links</h2>
-              <ul class="list-unstyled">
-                <li><a href="#">Sobre nós</a></li>
-                <li><a href="#">Serviços</a></li>
-                <li><a href="#">Testemunhos</a></li>
-                <li><a href="#">Cotação</a></li>
-                <li><a href="#">Contato</a></li>
-              </ul>
-            </div>
-            <div class="col-md-3">
-              <h2 class="footer-heading mb-4">Redes Sociais</h2>
-              <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-              <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <div class="row pt-5 mt-5 text-center">
-        <div class="col-md-12">
-          <div class="border-top pt-5">
-            <p>
-              Copyright &copy;
-              <script>document.write(new Date().getFullYear());</script> Todos direitos reservados
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </footer>
-
+    </footer>
 
   </div> <!-- .site-wrap -->
 
