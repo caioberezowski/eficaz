@@ -18,57 +18,60 @@
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
   <style>
-    body {font-family: Arial, Helvetica, sans-serif;}
-    
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
     .callout {
       position: fixed;
-      bottom: 35px;
-      right: 20px;
-      margin-left: 20px;
-      max-width: 300px;
+      bottom: 17px;
+      right: 10px;
+      margin-left: 10px;
+      max-width: 170px;
       z-index: 999;
     }
-    
+
     .callout-header {
       padding: 25px 15px;
       background: #001a72;
-      font-size: 30px;
+      font-size: 15px;
       color: white;
     }
-    
+
     .callout-container {
       padding: 15px;
       background-color: #ccc;
-      color: black
+      color: black;
+      font-size: 15px;
     }
-    
+
     .closebtn {
       position: absolute;
       top: 5px;
       right: 15px;
       color: white;
-      font-size: 30px;
+      font-size: 15px;
       cursor: pointer;
     }
-    
+
     .closebtn:hover {
       color: lightgrey;
     }
-    </style>
+  </style>
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
   <div class="callout">
-    <div class="callout-header">Ligamos para você</div>
+    <div class="callout-header">Ligamos para você!</div>
     <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
     <div class="callout-container">
-      <form method="POST" action="./php/ligue.php" >
-            <label class="text-black" for="nome">Nome:</label>
-            <input type="text" name="nome" class="form-control" placeholder="Seu nome">
-            <label class="text-black" for="telefone">Telefone:</label>
-            <input type="text" name="telefone" class="form-control" placeholder="DDD + Telefone">
-            <p></p>
-            <input type="submit" value="Enviar" class="btn btn-primary btn-md text-white">
+      <form method="POST" action="./php/ligue.php">
+        <label class="text-black">Nome:</label>
+        <input type="text" name="nomeligue" class="form-control" placeholder="Seu nome">
+        <label class="text-black">Telefone:</label>
+        <input type="text" name="telefoneligue" class="form-control" placeholder="DDD + Telefone">
+        <p></p>
+        <input type="submit" value="Enviar" class="btn btn-primary btn-md text-white">
       </form>
     </div>
   </div>
@@ -112,8 +115,10 @@
       <div class="container">
         <div class="row align-items-center">
 
-          <div class="col-11 col-xl-2">
-            <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">Eficaz<span
+          <div class="col-10 col-xl-2">
+            <h1 class="mb-0 site-logo">
+              <img src="./images/eficazlogo.svg" style="width:32px;height:32px;" alt="Eficaz Proteção">
+              <a href="index.html" class="text-black h2 mb-0">Eficaz<span
                   class="text-primary">.</span> </a></h1>
           </div>
           <div class="col-12 col-md-10 d-none d-xl-block">
@@ -121,53 +126,116 @@
 
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                 <li><a href="#home-section" class="nav-link">Home</a></li>
-                <li><a href="#about-section">Eficaz</a></li>
                 <li><a href="#work-section" class="nav-link">Cotação</a></li>
+                <li><a href="#about-section">Eficaz</a></li>
                 <li><a href="#services-section" class="nav-link">Serviços</a></li>
                 <li><a href="#indicacao-section">Indicação</a></li>
                 <li><a href="#team-section">Equipe</a></li>
-                <li><a href="http://blog.eficazprotecao.com.br" class="nav-link">Blog</a></li>
+                <!--<li><a href="http://blog.eficazprotecao.com.br" class="nav-link">Blog</a></li> -->
                 <li><a href="#contact-section" class="nav-link">Contato</a></li>
               </ul>
             </nav>
           </div>
-
-
           <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#"
               class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
-
         </div>
       </div>
 
     </header>
+    <!--Banner-->
+    <section class="section ft-feature-1">
+      <div class="site-blocks-cover overlay" style="background-image: url(images/truckdark.jpg);" data-aos="fade"
+        data-stellar-background-ratio="0.5">
+        <div class="container">
+          <div class="row align-items-center justify-content-center text-center">
 
+            <div class="col-md-12" data-aos="fade-up" data-aos-delay="400">
 
-
-    <div class="site-blocks-cover overlay" style="background-image: url(images/truck.jpg);" data-aos="fade"
-      data-stellar-background-ratio="0.5">
-      <div class="container">
-        <div class="row align-items-center justify-content-center text-center">
-
-          <div class="col-md-12" data-aos="fade-up" data-aos-delay="400">
-
-            <div class="row justify-content-center mb-4">
-              <div class="col-md-8 text-center">
-                <h1>Protegendo de danos causados em seu veículo por <span class="typed-words"></span></h1>
-                <!--
-                <div><a data-fancybox data-ratio="2" href="https://vimeo.com/317571768"
-                    class="btn btn-primary btn-md">Watch
-                    Video</a></div>
-                    -->
+              <div class="row justify-content-center mb-4">
+                <div class="col-md-8 text-center">
+                  <h1>Protegendo de danos causados em seu veículo por <span class="typed-words"></span></h1>
+                </div>
               </div>
-            </div>
 
+            </div>
           </div>
         </div>
       </div>
+    </section>
+    <!--Cotacao-->
+    <div class="site-section" id="work-section">
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <h2 class="text-black h1 site-section-heading text-center"></h2>
+          <h2 class="text-black h1 site-section-heading text-center">Faça sua cotação</h2>
+        </div>
+      </div>
+      <section class="section ft-feature-1">
+        <div class="container">
+          <div class="row align-items-stretch">
+            <div class="col-12 bg-light w-100 ft-feature-1-content">
+              <div class="row align-items-center">
+                <div class="col-lg-5">
+                  <img src="images/about_1.jpg" alt="Image" class="img-fluid mb-4 mb-lg-0">
+                </div>
+                <div class="col-lg-7 ml-auto">
+                  <form method="POST" action="./php/cotacao.php" class="p-5 bg-white">
+                    <div class="row form-group">
+                      <div class="col-md-6 mb-3 mb-md-0">
+                        <label class="text-black">Nome</label>
+                        <input type="text" name="nome" class="form-control">
+                      </div>
+                      <div class="col-md-6">
+                        <label class="text-black">Telefone</label>
+                        <input type="text" name="telefone" class="form-control">
+                      </div>
+                    </div>
+                    <div class="row form-group">
+                      <div class="col-md-12">
+                        <label class="text-black">Email</label>
+                        <input type="email" name="email" class="form-control">
+                      </div>
+                    </div>
+                    <div class="row form-group">
+                      <div class="col-md-6 mb-3 mb-md-0">
+                        <label class="text-black">Estado</label>
+                        <input type="text" name="estado" class="form-control">
+                      </div>
+                      <div class="col-md-6">
+                        <label class="text-black"></label>Cidade</label>
+                        <input type="text" name="cidade" class="form-control">
+                      </div>
+                    </div>
+                    <div class="row form-group">
+                      <div class="col-md-6 mb-3 mb-md-0">
+                        <label class="text-black">Marca</label>
+                        <input type="text" name="marca" class="form-control">
+                      </div>
+                      <div class="col-md-6">
+                        <label class="text-black">Ano de Fabricação</label>
+                        <input type="text" name="fabricacao" class="form-control">
+                      </div>
+                    </div>
+                    <div class="row form-group">
+                      <div class="col-md-12">
+                        <label class="text-black">Modelo</label>
+                        <input type="text" name="modelo" class="form-control">
+                      </div>
+                    </div>
+
+                    <div class="row form-group">
+                      <div class="col-md-12">
+                        <input type="submit" value="Enviar" class="btn btn-primary btn-md text-white">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
-
-
-
     <!--Beneficios-->
     <section class="site-section">
       <div class="container">
@@ -183,8 +251,7 @@
               <h2 class="text-primary">Adesão</h2>
               <p class="mb-4">Na Proteção Veicular a adesão é descomplicada e você tem cobertura no mesmo dia. No caso
                 da Proteção Veicular praticada pela Proteauto, você já está coberto IMEDIATAMENTE após a assinatura da
-                Proposta de Associação, do Laudo de Inspeção Veicular e do pagamento da sua taxa de adesão simples.
-                Preços.</p>
+                Proposta de Associação, do Laudo de Inspeção Veicular e do pagamento da sua taxa de adesão simples.</p>
             </div>
           </div>
 
@@ -195,8 +262,7 @@
               <p class="mb-4">Devido às associações não terem fins lucrativos, a Proteção Veicular é muito mais barata
                 que o seguro. Além disso, não há avaliação de perfil dos condutores, do local onde moram, se possuem
                 garagem, seu sexo ou idade, tempo de habilitação, etc. Não importa quem você é, onde mora e a quanto
-                tempo dirige. Nós iremos protegê-lo (a) sem preconceitos, estereótipos ou prejulgamentos. Para a Eficaz,
-                todos são iguais e possuem os mesmos direitos..</p>
+                tempo dirige. Nós iremos protegê-lo (a) sem preconceitos, estereótipos ou prejulgamentos.</p>
             </div>
           </div>
 
@@ -232,18 +298,14 @@
                 </div>
               </div>
               <div class="col-12 mb-4">
-                <p class="lead">A Eficaz Proteção é uma empresa que presta serviços de proteção, estamos no mercado
-                  desde 2008 providenciando
-                  apoio aos nossos clientes no momento em que é mais preciso.
-                  Trabalhamos com proteção para veículos pesados (PROTEAUTO), que hoje é referencia nacional em proteção
-                  para veículos pesados,
-                  contando com mais de 8.000 associados ativos.
-                  Temos como objetivo reunir pessoas idôneas e comprometidas em proteger-se mutuamente dos eventuais
-                  prejuízos inesperados
-                  advindos de sinistros em seus veículos.</p>
+                <p class="lead">A Eficaz Proteção é uma EMPRESA DE REPRESENTAÇÃO, estamos no mercado desde 2008 providenciando 
+                  apoio aos nossos clientes no momento em que é mais preciso. REPRESENTAMOS A PROTEAUTO que é nossa parceira 
+                  desde 2016, hoje é referencia nacional em proteção para veículos pesados, contando com mais de 8.000 
+                  ASSOCIADOS ativos. Temos como objetivo reunir pessoas idôneas e comprometidas em proteger-se mutuamente 
+                  dos eventuais prejuízos inesperados advindos de sinistros em seus veículos.</p>
               </div>
               <div class="col-md-12 mb-md-5 mb-0 col-lg-12">
-                <div class="unit-4">
+                <div class="unit-4" style="text-align: center;">
                   <div class="unit-4-icon mr-6 mb-6"><span class="text-secondary icon-truck"></span></div>
                   <div>
                     <h3>Proteauto</h3>
@@ -261,84 +323,6 @@
         </div>
       </div>
     </div>
-    <!--Cotacao-->
-    <div class="site-section" id="work-section">
-      <div class="row justify-content-center">
-        <div class="col-md-8 text-center">
-          <h2 class="text-black h1 site-section-heading text-center">Cotação</h2>
-        </div>
-      </div>
-      <section class="section ft-feature-1">
-        <div class="container">
-          <div class="row align-items-stretch">
-            <div class="col-12 bg-light w-100 ft-feature-1-content">
-              <div class="row align-items-center">
-                <div class="col-lg-5">
-
-                  <img src="images/about_1.jpg" alt="Image" class="img-fluid mb-4 mb-lg-0">
-
-                </div>
-                <div class="col-lg-7 ml-auto">
-                  <form action="#" class="p-5 bg-white">
-                    <div class="row form-group">
-                      <div class="col-md-6 mb-3 mb-md-0">
-                        <label class="text-black" for="nome">Nome</label>
-                        <input type="text" id="nome" class="form-control">
-                      </div>
-                      <div class="col-md-6">
-                        <label class="text-black" for="telefone">Telefone</label>
-                        <input type="text" id="telefone" class="form-control">
-                      </div>
-                    </div>
-                    <div class="row form-group">
-                      <div class="col-md-12">
-                        <label class="text-black" for="email">Email</label>
-                        <input type="email" id="email" class="form-control">
-                      </div>
-                    </div>
-                    <div class="row form-group">
-                      <div class="col-md-6 mb-3 mb-md-0">
-                        <label class="text-black" for="estado">Estado</label>
-                        <input type="text" id="estado" class="form-control">
-                      </div>
-                      <div class="col-md-6">
-                        <label class="text-black" for="cidade">Cidade</label>
-                        <input type="text" id="cidade" class="form-control">
-                      </div>
-                    </div>
-                    <div class="row form-group">
-                      <div class="col-md-6 mb-3 mb-md-0">
-                        <label class="text-black" for="marca">Marca</label>
-                        <input type="text" id="marca" class="form-control">
-                      </div>
-                      <div class="col-md-6">
-                        <label class="text-black" for="fabricacao">Ano de Fabricação</label>
-                        <input type="text" id="fabricacao" class="form-control">
-                      </div>
-                    </div>
-                    <div class="row form-group">
-                      <div class="col-md-12">
-                        <label class="text-black" for="modelo">Modelo</label>
-                        <input type="text" id="modelo" class="form-control">
-                      </div>
-                    </div>
-
-                    <div class="row form-group">
-                      <div class="col-md-12">
-                        <input type="submit" value="Enviar" class="btn btn-primary btn-md text-white">
-                      </div>
-                    </div>
-
-
-                  </form>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
     <!--Depoimento-->
     <section class="site-section testimonial-wrap">
       <div class="container">
@@ -353,14 +337,19 @@
           <div class="testimonial">
 
             <blockquote class="mb-5">
-              <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam
-                quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet
-                dolores excepturi earum unde iusto.&rdquo;</p>
+              <p>&ldquo;Sou associado da Proteauto desde 2017, toda a minha frota está protegida com eles, tenho como um
+                grande
+                parceiro, SE NÃO FOSSE A PROTEAUTO HOJE EU ESTARIA QUEBRADO, no primeiro ano tive um sinistro de perca
+                total e fui
+                muito bem atendido me indenizaram certinho como combinado, no ano de 2019 tive dois sinistro e um roubo,
+                da mesma
+                forma me deram todo suporte, me pagou tudo certo, eu confio na Proteauto, ela é minha parceira e eu sou
+                parceiro dela.&rdquo;</p>
             </blockquote>
 
             <figure class="mb-4 d-flex align-items-center justify-content-center">
-              <div><img src="images/person_3.jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
-              <p>John Smith</p>
+              <div><img src="images/sergio.jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
+              <p>Sergio Delmenico (Marialva-Pr)</p>
             </figure>
           </div>
         </div>
@@ -368,35 +357,41 @@
           <div class="testimonial">
 
             <blockquote class="mb-5">
-              <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam
-                quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet
-                dolores excepturi earum unde iusto.&rdquo;</p>
+              <p>&ldquo;Se eu, como associado da Proteauto tenho algo a dizer da empresa é isso:
+                Eu sofri um acidente durante uma viagem que fiz (de caminhão), informei a Proteauto e fui muito bem
+                atendido
+                não tive que me preocupar com nada, eles que fizeram todo o trabalho, de buscar o guincho e levar o
+                caminhão para outra cidade.
+                O meu conselho é: Se você não é associado chegou a hora de ser, não perca tempo, porque nunca sabemos o
+                que
+                pode acontecer, contrate a Proteauto e falo isso como cliente, que você não irá se arrepender.&rdquo;
+              </p>
             </blockquote>
             <figure class="mb-4 d-flex align-items-center justify-content-center">
-              <div><img src="images/person_2.jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
-              <p>Christine Aguilar</p>
+              <div><img src="images/antonio.jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
+              <p>Antônio Agostini</p>
             </figure>
 
           </div>
         </div>
-
+        
         <div>
           <div class="testimonial">
 
             <blockquote class="mb-5">
-              <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam
-                quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet
-                dolores excepturi earum unde iusto.&rdquo;</p>
+              <p>&ldquo;Eu precisei de um Guincho e fui atendido muito bem, foi rapidinho, rapidinho o guincho estava lá, 
+                me deixou no recurso, não tenho o que reclamar não, no que precisei eles me atenderam certinho, eu indico 
+                a Proteauto!&rdquo;</p>
             </blockquote>
             <figure class="mb-4 d-flex align-items-center justify-content-center">
-              <div><img src="images/person_4.jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
-              <p>Robert Spears</p>
+              <div><img src="images/ademir.jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
+              <p>Ademir da Silva</p>
             </figure>
 
 
           </div>
         </div>
-
+        <!--
         <div>
           <div class="testimonial">
 
@@ -412,7 +407,7 @@
 
           </div>
         </div>
-
+-->
       </div>
     </section>
     <!--Serviços-->
@@ -513,7 +508,52 @@
               </div>
             </div>
           </div>
-
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class="text-primary icon-money"></span></div>
+              <div>
+                <h3>Cota de Participação</h3>
+                <p>Visando minimizar o rateio de prejuízos entre os associados, e como forma de reduzir o valor a ser
+                  pago
+                  por todos, a cota de participação (3%) é o valor que o associado contribui nos custos de perda parcial
+                  do veículo.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class="text-primary icon-warning"></span></div>
+              <div>
+                <h3>Colisão</h3>
+                <p>Nossa cobertura contra colisões* irá garantir que, ao caso de sinistro, você consiga consertar seu
+                  veículo
+                  no menor tempo possível, em uma das nossas oficinas credenciadas**, com o menor esforço e no menor
+                  tempo possível.
+                  Todos os nossos profissionais estão empenhados em ajudá-lo minimizando suas frustrações. Em caso de
+                  colisões,
+                  você poderá contar, através da nossa central 24h, com nosso serviço de reboque, transporte para
+                  retirada do
+                  veículo, destombamento, transmissão de mensagens, retorno ao domicílio, remoção inter hospitalar e até
+                  mesmo
+                  com nosso serviço de táxi.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="unit-4 d-flex">
+              <div class="unit-4-icon mr-4"><span class="text-primary icon-handshake-o"></span></div>
+              <div>
+                <h3>Danos a Terceiros</h3>
+                <p>A Proteauto entende o quanto é importante manter nossos associados protegidos, e dessa forma,
+                  pensando em promover uma viagem mais segura para todos, disponibilizamos a coberturas para indenização
+                  de terceiros. Em acidentes em que o associado for o responsável envolvendo terceiros, a Proteauto
+                  garante
+                  o reparo do(s) veículo(s) de terceiro(s) envolvido(s)</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -524,6 +564,7 @@
           <h2 class="text-black h1 site-section-heading text-center">Indicação Premiada</h2>
           <h3 class="text-black text-center">Ganhe R$200,00 para cada amigo indicado que fechar um plano de proteção
             conosco.</h3>
+            <br>
         </div>
       </div>
       <section class="section ft-feature-1">
@@ -537,22 +578,22 @@
                     <div class="row form-group">
                       <div class="col-md-6 mb-3 mb-md-0">
                         <label class="text-black" for="nome">Nome Completo:</label>
-                        <input type="text" id="nomeindicador" class="form-control" placeholder="Seu nome">
+                        <input type="text" name="nomeindicador" class="form-control" placeholder="Seu nome">
                       </div>
                       <div class="col-md-6">
                         <label class="text-black" for="telefone">Telefone:</label>
-                        <input type="text" id="telefoneindicador" class="form-control" placeholder="DDD + Telefone">
+                        <input type="text" name="telefoneindicador" class="form-control" placeholder="DDD + Telefone">
                       </div>
                     </div>
                     <h2 class="text-black h1 site-section-heading text-center">Indicado</h2>
                     <div class="row form-group">
                       <div class="col-md-6 mb-3 mb-md-0">
                         <label class="text-black" for="nome">Nome Completo:</label>
-                        <input type="text" id="nomeindicado" class="form-control" placeholder="Nome do indicado">
+                        <input type="text" name="nomeindicado" class="form-control" placeholder="Nome do indicado">
                       </div>
                       <div class="col-md-6">
                         <label class="text-black" for="telefone">Telefone:</label>
-                        <input type="text" id="telefoneindicado" class="form-control" placeholder="DDD + Telefone">
+                        <input type="text" name="telefoneindicado" class="form-control" placeholder="DDD + Telefone">
                       </div>
                     </div>
                     <div class="row form-group">
@@ -562,9 +603,10 @@
                     </div>
                     <div class="row form-group">
                       <div class="col-md-12">
-                      <a href="regulamento.html" class="regulamento" style="color: #D1462F; padding-left: 80%;">*Regulamento</a>
+                        <a href="regulamento.html" class="regulamento"
+                          style="color: #D1462F; padding-left: 80%;">*Regulamento</a>
+                      </div>
                     </div>
-                  </div>
                   </form>
 
                 </div>
@@ -579,7 +621,7 @@
         </div>
       </section>
     </div>
-    <!--Depoimento-->
+    <!--Equipe-->
     <div class="site-section border-bottom" id="team-section">
       <div class="container">
         <div class="row justify-content-center mb-5">
@@ -588,50 +630,59 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6 col-lg-3 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
             <div class="person text-center">
               <img src="images/person_2.jpg" alt="Image" class="img-fluid rounded-circle w-50 mb-5">
               <h3>Ney </h3>
-              <p class="position text-muted">Co-Founder, President</p>
-              <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde
-                molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate
-                tempore suscipit inventore deserunt tenetur.</p>
+              <p class="mb-4">Fundador da Eficaz Proteção (empresa de representação) trabalha com proteção desde 2009,
+                tem escritório de representação desde 2016, á 4 anos representando a Proteauto Truck em Maringá-Pr e
+                região, atendendo seus clientes/amigos da melhor forma possível.</p>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
             <div class="person text-center">
               <img src="images/person_3.jpg" alt="Image" class="img-fluid rounded-circle w-50 mb-5">
               <h3>Gabriel</h3>
-              <p class="position text-muted">Co-Founder, COO</p>
-              <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde
-                molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate
-                tempore suscipit inventore deserunt tenetur.</p>
+              <p class="mb-4">Fundador e Gestor da Eficaz Proteção (empresa de representação) trabalha na empresa desde
+                2016, no início internamente no escritório, atualmente também é consultor, sempre buscando a melhor
+                maneira de ajudar os associados.</p>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="300">
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="300">
             <div class="person text-center">
-              <img src="images/person_4.jpg" alt="Image" class="img-fluid rounded-circle w-50 mb-5">
+              <img src="images/carol.jpg" alt="Image" class="img-fluid rounded-circle w-50 mb-5">
               <h3>Carol</h3>
-              <p class="position text-muted">Marketing</p>
-              <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde
-                molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate
-                tempore suscipit inventore deserunt tenetur.</p>
+              <p class="mb-4">Secretaria e Financeiro, trabalha na empresa desde 2018, também buscando ajudar e auxiliar
+                cada associado.</p>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="400">
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="400">
+            <div class="person text-center">
+              <img src="images/rebeca.jpg" alt="Image" class="img-fluid rounded-circle w-50 mb-5">
+              <h3>Rebeca</h3>
+              <p class="mb-4">Secretaria, é responsável pela parte de cadastro da empresa, vistoria, contratos.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="500">
+            <div class="person text-center">
+              <img src="images/maicon.jpg" alt="Image" class="img-fluid rounded-circle w-50 mb-5">
+              <h3>Maicon</h3>
+              <p class="mb-4">Consultor representante na cidade de Ponta Grossa-Pr e região, trabalha conosco desde
+                2018, vendendo proteção para os caminhoneiros, e atendendo muito bem os associados</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="600">
             <div class="person text-center">
               <img src="images/person_4.jpg" alt="Image" class="img-fluid rounded-circle w-50 mb-5">
-              <h3>Rebeca</h3>
-              <p class="position text-muted">Marketing</p>
-              <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi at consequatur unde
-                molestiae quidem provident voluptatum deleniti quo iste error eos est praesentium distinctio cupiditate
-                tempore suscipit inventore deserunt tenetur.</p>
+              <h3>Jussará</h3>
+              <p class="mb-4"> Consultora representante na cidade de Dourados-Ms e região, trabalha conosco desde 2019,
+                vendendo proteção para os caminhoneiros, e atendendo muito bem os associados.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!--Contado-->
+    <!--Contato-->
     <section class="site-section bg-light" id="contact-section">
       <div class="container">
         <div class="row mb-5">
@@ -721,17 +772,16 @@
               <div class="col-md-3 ml-auto">
                 <h2 class="footer-heading mb-4">Links</h2>
                 <ul class="list-unstyled">
-                  <li><a href="#">Sobre nós</a></li>
-                  <li><a href="#">Serviços</a></li>
-                  <li><a href="#">Testemunhos</a></li>
-                  <li><a href="#">Cotação</a></li>
-                  <li><a href="#">Contato</a></li>
+                  <li><a href="#about-section">Sobre nós</a></li>
+                  <li><a href="#services-section">Serviços</a></li>
+                  <li><a href="#work-section">Cotação</a></li>
+                  <li><a href="#contact-section">Contato</a></li>
                 </ul>
               </div>
               <div class="col-md-3">
                 <h2 class="footer-heading mb-4">Redes Sociais</h2>
-                <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-                <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                <a href="#https://www.facebook.com/eficazprotecao.com.br/" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
+                <a href="#https://www.instagram.com/eficazprotecao/" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
               </div>
             </div>
           </div>

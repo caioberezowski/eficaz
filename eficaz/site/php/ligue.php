@@ -1,24 +1,25 @@
 <?php
 
-if(isset($_POST['telefone']) && !empty($_POST['telefone']) &&
- isset($_POST['nome']) && !empty($_POST['nome'])){
+if(isset($_POST['telefoneligue']) && !empty($_POST['telefoneligue']) &&
+ isset($_POST['nomeligue']) && !empty($_POST['nomeligue'])){
 
-$nome = addslashes($_POST['nome']);
-$telefone = addslashes($_POST['telefone']);
+$nomeligue = addslashes($_POST['nomeligue']);
+$telefoneligue = addslashes($_POST['telefoneligue']);
 
-$to = "caioberezowski@gmail.com";
+$to = "contato@eficazprotecao.com.br";
 $subject = "Ligue para mim - SITE";
-$body = "Nome: ".$nome."\r\n".
-        "Telefone: ".$telefone."\r\n".
+$body = "Nome: ".$nomeligue."\r\n".
+        "Telefone: ".$telefoneligue."\r\n\r\n".
 $header = "From:dev@eficazprotecao.com.br"."\r\n".
-        "Reply-To:".$email."\r\n".
         "X=Mailer:PHP/".phpversion();
 
 if(mail($to,$subject,$body,$header)){
-  echo "<script> alert('Enviado com sucesso!'); location= './../index.html'; </script>";
+  echo "<script> alert('Logo entraremos em contato!'); location= './../index.html'; </script>";
 }else{
   echo "<script> alert('Ocorreu um erro e não foi enviado!'); location= './../index.html'; </script>";
 }
+}else{
+  echo "<script> alert('Ocorreu um erro e não foi enviado!'); location= './../index.html'; </script>";
 }
 
 ?>
