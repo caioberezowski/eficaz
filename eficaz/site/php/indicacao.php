@@ -20,7 +20,7 @@ $header = "From:dev@eficazprotecao.com.br"."\r\n".
         "X=Mailer:PHP/".phpversion();
 
 if(mail($to,$subject,$body,$header)){
-  echo "<script> alert('Indicação enviada com sucesso!'); location= './../index.html'; </script>";
+  echo "<script> alert('Indicação enviada com sucesso!'); location= './../obrigadoindicacao.html'; </script>";
 }else{
   echo "<script> alert('Ocorreu um erro e não foi enviado!'); location= './../index.html'; </script>";
 }

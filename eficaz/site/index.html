@@ -2,6 +2,13 @@
 <html lang="en">
 
 <head>
+    <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-58PBLRX');</script>
+  <!-- End Google Tag Manager -->
   <title>Eficaz Proteção &mdash; Proteção para o seu caminhão</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -57,10 +64,15 @@
     .closebtn:hover {
       color: lightgrey;
     }
-  </style>
+  </style>  
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-58PBLRX"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  
   <div class="callout">
     <div class="callout-header">Ligamos para você!</div>
     <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
@@ -126,13 +138,13 @@
 
               <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                 <li><a href="#home-section" class="nav-link">Home</a></li>
-                <li><a href="#work-section" class="nav-link">Cotação</a></li>
-                <li><a href="#about-section">Eficaz</a></li>
+                <li><a href="#cotacao" class="nav-link">Cotação</a></li>
+                <li><a href="#eficaz">Eficaz</a></li>
                 <li><a href="#services-section" class="nav-link">Serviços</a></li>
                 <li><a href="#indicacao-section">Indicação</a></li>
                 <li><a href="#team-section">Equipe</a></li>
                 <!--<li><a href="http://blog.eficazprotecao.com.br" class="nav-link">Blog</a></li> -->
-                <li><a href="#contact-section" class="nav-link">Contato</a></li>
+                <li><a href="#sessao-contato" class="nav-link">Contato</a></li>
               </ul>
             </nav>
           </div>
@@ -144,7 +156,7 @@
     </header>
     <!--Banner-->
     <section class="section ft-feature-1">
-      <div class="site-blocks-cover overlay" style="background-image: url(images/truckdark.jpg);" data-aos="fade"
+      <div class="site-blocks-cover overlay" style="background-image: url(images/fundocaminhao.jpg);" data-aos="fade"
         data-stellar-background-ratio="0.5">
         <div class="container">
           <div class="row align-items-center justify-content-center text-center">
@@ -163,11 +175,11 @@
       </div>
     </section>
     <!--Cotacao-->
-    <div class="site-section" id="work-section">
+    <div class="site-section" id="cotacao">
       <div class="row justify-content-center">
         <div class="col-md-8 text-center">
           <h2 class="text-black h1 site-section-heading text-center"></h2>
-          <h2 class="text-black h1 site-section-heading text-center">Faça sua cotação</h2>
+          <h2 class="text-black h1 site-section-heading text-center">Não perca mais tempo faça sua cotação!</h2>
         </div>
       </div>
       <section class="section ft-feature-1">
@@ -175,60 +187,61 @@
           <div class="row align-items-stretch">
             <div class="col-12 bg-light w-100 ft-feature-1-content">
               <div class="row align-items-center">
-                <div class="col-lg-5">
-                  <img src="images/about_1.jpg" alt="Image" class="img-fluid mb-4 mb-lg-0">
-                </div>
                 <div class="col-lg-7 ml-auto">
                   <form method="POST" action="./php/cotacao.php" class="p-5 bg-white">
                     <div class="row form-group">
                       <div class="col-md-6 mb-3 mb-md-0">
                         <label class="text-black">Nome</label>
-                        <input type="text" name="nome" class="form-control">
+                        <input type="text" name="nome" class="form-control" placeholder="Seu nome">
                       </div>
                       <div class="col-md-6">
                         <label class="text-black">Telefone</label>
-                        <input type="text" name="telefone" class="form-control">
+                        <input type="text" name="telefone" class="form-control" placeholder="DDD + Telefone">
                       </div>
                     </div>
                     <div class="row form-group">
                       <div class="col-md-12">
                         <label class="text-black">Email</label>
-                        <input type="email" name="email" class="form-control">
+                        <input type="email" name="email" class="form-control" placeholder="Ex: nome@email.com">
                       </div>
                     </div>
                     <div class="row form-group">
                       <div class="col-md-6 mb-3 mb-md-0">
                         <label class="text-black">Estado</label>
-                        <input type="text" name="estado" class="form-control">
+                        <input type="text" name="estado" class="form-control" placeholder="Ex: SP">
                       </div>
                       <div class="col-md-6">
                         <label class="text-black"></label>Cidade</label>
-                        <input type="text" name="cidade" class="form-control">
-                      </div>
-                    </div>
-                    <div class="row form-group">
-                      <div class="col-md-6 mb-3 mb-md-0">
-                        <label class="text-black">Marca</label>
-                        <input type="text" name="marca" class="form-control">
-                      </div>
-                      <div class="col-md-6">
-                        <label class="text-black">Ano de Fabricação</label>
-                        <input type="text" name="fabricacao" class="form-control">
+                        <input type="text" name="cidade" class="form-control" placeholder="Ex: São Paulo">
                       </div>
                     </div>
                     <div class="row form-group">
                       <div class="col-md-12">
-                        <label class="text-black">Modelo</label>
-                        <input type="text" name="modelo" class="form-control">
+                        <label class="text-black">Marca/Modelo</label>
+                        <input type="text" name="marca" class="form-control" placeholder="Ex: Scania R440 6x2">
+                      </div>
+                    </div>
+                    <div class="row form-group">
+                      <div class="col-md-6 mb-3 mb-md-0">
+                        <label class="text-black">Placa</label>
+                        <input type="text" name="placa" class="form-control" placeholder="Placa">
+                      </div>
+                      <div class="col-md-6">
+                        <label class="text-black">Ano de Fabricação</label>
+                        <input type="text" name="fabricacao" class="form-control" placeholder="Ex: 2000">
                       </div>
                     </div>
 
                     <div class="row form-group">
                       <div class="col-md-12">
                         <input type="submit" value="Enviar" class="btn btn-primary btn-md text-white">
+  
                       </div>
                     </div>
                   </form>
+                </div>
+                <div class="col-lg-5">
+                  <img src="images/caminhaoservicos.jpg" alt="Image" class="img-fluid mb-4 mb-lg-0">
                 </div>
               </div>
             </div>
@@ -281,7 +294,7 @@
       </div>
     </section>
     <!--Sobre-->
-    <div class="site-section" id="about-section">
+    <div class="site-section" id="eficaz">
       <div class="container">
         <div class="row mb-5">
 
@@ -298,10 +311,10 @@
                 </div>
               </div>
               <div class="col-12 mb-4">
-                <p class="lead">A Eficaz Proteção é uma EMPRESA DE REPRESENTAÇÃO, estamos no mercado desde 2008 providenciando 
-                  apoio aos nossos clientes no momento em que é mais preciso. REPRESENTAMOS A PROTEAUTO que é nossa parceira 
-                  desde 2016, hoje é referencia nacional em proteção para veículos pesados, contando com mais de 8.000 
-                  ASSOCIADOS ativos. Temos como objetivo reunir pessoas idôneas e comprometidas em proteger-se mutuamente 
+                <p>A Eficaz Proteção é uma <b>EMPRESA DE REPRESENTAÇÃO</b> estamos no mercado desde 2008 providenciando 
+                  apoio aos nossos clientes no momento em que é mais preciso. <b>REPRESENTAMOS A PROTEAUTO</b> que é <b>nossa parceira 
+                  desde 2016</b>, hoje é <b>referencia nacional em proteção para veículos pesados</b>, contando com mais de <b>8.000 
+                  ASSOCIADOS ativos</b>. Temos como objetivo reunir pessoas idôneas e comprometidas em proteger-se mutuamente 
                   dos eventuais prejuízos inesperados advindos de sinistros em seus veículos.</p>
               </div>
               <div class="col-md-12 mb-md-5 mb-0 col-lg-12">
@@ -339,9 +352,9 @@
             <blockquote class="mb-5">
               <p>&ldquo;Sou associado da Proteauto desde 2017, toda a minha frota está protegida com eles, tenho como um
                 grande
-                parceiro, SE NÃO FOSSE A PROTEAUTO HOJE EU ESTARIA QUEBRADO, no primeiro ano tive um sinistro de perca
+                parceiro,<b> SE NÃO FOSSE A PROTEAUTO HOJE EU ESTARIA QUEBRADO</b>, no primeiro ano tive um sinistro de perca
                 total e fui
-                muito bem atendido me indenizaram certinho como combinado, no ano de 2019 tive dois sinistro e um roubo,
+                <b> muito bem atendido me indenizaram certinho como combinado</b>, no ano de 2019 tive dois sinistro e um roubo,
                 da mesma
                 forma me deram todo suporte, me pagou tudo certo, eu confio na Proteauto, ela é minha parceira e eu sou
                 parceiro dela.&rdquo;</p>
@@ -358,13 +371,13 @@
 
             <blockquote class="mb-5">
               <p>&ldquo;Se eu, como associado da Proteauto tenho algo a dizer da empresa é isso:
-                Eu sofri um acidente durante uma viagem que fiz (de caminhão), informei a Proteauto e fui muito bem
+                Eu sofri um acidente durante uma viagem que fiz (de caminhão), informei a Proteauto e fui <b>muito bem
                 atendido
-                não tive que me preocupar com nada, eles que fizeram todo o trabalho, de buscar o guincho e levar o
+                não tive que me preocupar com nada</b>, eles que fizeram todo o trabalho, de buscar o guincho e levar o
                 caminhão para outra cidade.
-                O meu conselho é: Se você não é associado chegou a hora de ser, não perca tempo, porque nunca sabemos o
+                O meu conselho é: <b>Se você não é associado chegou a hora de ser</b>, não perca tempo, porque <b>nunca sabemos o
                 que
-                pode acontecer, contrate a Proteauto e falo isso como cliente, que você não irá se arrepender.&rdquo;
+                pode acontecer</b>, contrate a Proteauto e falo isso como cliente, que você não irá se arrepender.&rdquo;
               </p>
             </blockquote>
             <figure class="mb-4 d-flex align-items-center justify-content-center">
@@ -379,7 +392,7 @@
           <div class="testimonial">
 
             <blockquote class="mb-5">
-              <p>&ldquo;Eu precisei de um Guincho e fui atendido muito bem, foi rapidinho, rapidinho o guincho estava lá, 
+              <p>&ldquo;Eu precisei de um Guincho e fui <b>atendido muito bem</b>, foi rapidinho, rapidinho o guincho estava lá, 
                 me deixou no recurso, não tenho o que reclamar não, no que precisei eles me atenderam certinho, eu indico 
                 a Proteauto!&rdquo;</p>
             </blockquote>
@@ -391,23 +404,6 @@
 
           </div>
         </div>
-        <!--
-        <div>
-          <div class="testimonial">
-
-            <blockquote class="mb-5">
-              <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam
-                quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet
-                dolores excepturi earum unde iusto.&rdquo;</p>
-            </blockquote>
-            <figure class="mb-4 d-flex align-items-center justify-content-center">
-              <div><img src="images/person_5.jpg" alt="Image" class="w-50 img-fluid mb-3"></div>
-              <p>Bruce Rogers</p>
-            </figure>
-
-          </div>
-        </div>
--->
       </div>
     </section>
     <!--Serviços-->
@@ -471,7 +467,7 @@
                 <p>Os capotamentos são a maior causa individual na morte de condutores de caminhões e é uma das
                   principais
                   causas de danos a carga e dos veículos. Os caminhões tombam facilmente porque são altos e
-                  estreitos. Os
+                  estreitos.Os
                   capotamentos geralmente acontecem em caminhos rurais, estradas, curvas e em rampas de saída ou
                   entradas
                   de estradas. Pensando nisso, a Proteauto criou também a cobertura de destombamento para seus
@@ -599,6 +595,7 @@
                     <div class="row form-group">
                       <div class="col-md-12">
                         <input type="submit" value="Enviar" class="btn btn-primary btn-md text-white">
+  
                       </div>
                     </div>
                     <div class="row form-group">
@@ -626,22 +623,22 @@
       <div class="container">
         <div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center">
-            <h2 class="text-black h1 site-section-heading">Nosso Time</h2>
+            <h2 class="text-black h1 site-section-heading">Nosso Time Eficaz</h2>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
             <div class="person text-center">
-              <img src="images/person_2.jpg" alt="Image" class="img-fluid rounded-circle w-50 mb-5">
+              <img src="images/ney.jpg" alt="Image" class="img-fluid rounded-circle w-50 mb-5">
               <h3>Ney </h3>
               <p class="mb-4">Fundador da Eficaz Proteção (empresa de representação) trabalha com proteção desde 2009,
-                tem escritório de representação desde 2016, á 4 anos representando a Proteauto Truck em Maringá-Pr e
+                tem escritório de representação desde 2016, há 4 anos representando a Proteauto Truck em Maringá-Pr e
                 região, atendendo seus clientes/amigos da melhor forma possível.</p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
             <div class="person text-center">
-              <img src="images/person_3.jpg" alt="Image" class="img-fluid rounded-circle w-50 mb-5">
+              <img src="images/gabriel.jpg" alt="Image" class="img-fluid rounded-circle w-50 mb-5">
               <h3>Gabriel</h3>
               <p class="mb-4">Fundador e Gestor da Eficaz Proteção (empresa de representação) trabalha na empresa desde
                 2016, no início internamente no escritório, atualmente também é consultor, sempre buscando a melhor
@@ -673,8 +670,8 @@
           </div>
           <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="600">
             <div class="person text-center">
-              <img src="images/person_4.jpg" alt="Image" class="img-fluid rounded-circle w-50 mb-5">
-              <h3>Jussará</h3>
+              <img src="images/jussara.jpg" alt="Image" class="img-fluid rounded-circle w-50 mb-5">
+              <h3>Jussara</h3>
               <p class="mb-4"> Consultora representante na cidade de Dourados-Ms e região, trabalha conosco desde 2019,
                 vendendo proteção para os caminhoneiros, e atendendo muito bem os associados.</p>
             </div>
@@ -683,7 +680,7 @@
       </div>
     </div>
     <!--Contato-->
-    <section class="site-section bg-light" id="contact-section">
+    <section class="site-section bg-light" id="sessao-contato">
       <div class="container">
         <div class="row mb-5">
           <div class="col-12 text-center">
@@ -699,14 +696,14 @@
               <div class="row form-group">
                 <div class="col-md-12">
                   <label class="text-black" for="nome">Nome</label>
-                  <input type="text" name="nome" class="form-control">
+                  <input type="text" name="nome" class="form-control" placeholder="Seu nome">
                 </div>
               </div>
 
               <div class="row form-group">
                 <div class="col-md-12">
                   <label class="text-black" for="email">Email</label>
-                  <input type="email" name="email" class="form-control">
+                  <input type="email" name="email" class="form-control" placeholder="nome@email.com">
                 </div>
               </div>
 
@@ -749,11 +746,11 @@
       </div>
     </section>
 
-    <a href="#" class="bg-primary py-5 d-block">
+    <a href="#cotacao" class="bg-primary py-5 d-block">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md10">
-            <h2 class="text-white">Vamos se proteger?!</h2>
+            <h2 class="text-white">Faça sua proteção!</h2>
           </div>
         </div>
       </div>
@@ -772,10 +769,10 @@
               <div class="col-md-3 ml-auto">
                 <h2 class="footer-heading mb-4">Links</h2>
                 <ul class="list-unstyled">
-                  <li><a href="#about-section">Sobre nós</a></li>
+                  <li><a href="#eficaz">Sobre nós</a></li>
                   <li><a href="#services-section">Serviços</a></li>
-                  <li><a href="#work-section">Cotação</a></li>
-                  <li><a href="#contact-section">Contato</a></li>
+                  <li><a href="#cotacao">Cotação</a></li>
+                  <li><a href="#sessao-contato">Contato</a></li>
                 </ul>
               </div>
               <div class="col-md-3">
